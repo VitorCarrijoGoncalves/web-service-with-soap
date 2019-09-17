@@ -4,19 +4,30 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlType;
 
 @Entity
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "user", propOrder = {
+		"id",
+		"nome",
+		"email"
+})
 public class Usuario {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@XmlElement(required = true)
 	private Long id;
 	
 	private String nome;
 
 	private String email;
 
-	private boolean status;
+//	private boolean status;
 
 	public Long getId() {
 		return id;
@@ -42,11 +53,11 @@ public class Usuario {
 		this.email = email;
 	}
 
-	public boolean isStatus() {
-		return status;
-	}
-
-	public void setStatus(boolean status) {
-		this.status = status;
-	}
+//	public boolean isStatus() {
+//		return status;
+//	}
+//
+//	public void setStatus(boolean status) {
+//		this.status = status;
+//	}
 }

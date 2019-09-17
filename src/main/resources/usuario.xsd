@@ -1,0 +1,7 @@
+<xs:schema xmlns="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://techprimers.com/spring-boot-soap-example"
+           targetNamespace:tns="http://techprimers.com/spring-boot-soap-example"
+           elementFormDefault="qualified">
+
+
+</xs:schema>

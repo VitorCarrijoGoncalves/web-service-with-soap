@@ -6,10 +6,10 @@ import javax.xml.bind.annotation.*;
 @XmlType(name = "", propOrder = {
         "id"
 })
-@XmlRootElement
+@XmlRootElement(name = "getUsuarioRequest")
 public class GetUsuarioRequest {
 
-    @XmlElement
+    @XmlElement(required = true)
     protected Long id;
 
     public Long getId() {

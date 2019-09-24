@@ -1,13 +1,13 @@
 package br.com.oab.service;
 
-import br.com.oab.model.Usuario;
-import br.com.oab.request.GetUsuarioRequest;
-import br.com.oab.response.GetUsuarioResponse;
-import org.springframework.stereotype.Service;
-
-import javax.annotation.PostConstruct;
 import java.util.HashMap;
 import java.util.Map;
+
+import javax.annotation.PostConstruct;
+
+import org.springframework.stereotype.Service;
+
+import br.com.oab.model.Usuario;
 
 @Service
 public class UserService {

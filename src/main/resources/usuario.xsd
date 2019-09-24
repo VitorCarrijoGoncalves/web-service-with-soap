@@ -28,6 +28,3 @@
     </xs:complexType>
 
 </xs:schema>
-
-
-<!-- http://localhost:8080/ws.usuario.wsdl -->
